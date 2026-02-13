@@ -29,4 +29,30 @@ void main() {
 
 
   print ("Switch case bitti çıkan sonuç: $isSuccess");
+
+  // magazaya gelen isimlerden veli olan olursa print bravo yaz
+  // diğer müşteri ekin
+
+  const String specialUser1 = "Veli";
+  const String specialUser2 = "Ahmet";
+  const String specialUser3 = "Mehmet";
+
+  String name = "Veli"; // test için
+
+  switch (name) {
+    case specialUser1:
+    case specialUser2:
+    case specialUser3:
+      print("Bravo");
+      break;
+    default:
+      print("Ekin");
+  }
+
+  // Alternatif: sadece Veli özel olsun dersen:
+  if (name == "Veli") {
+    print("Bravo2");
+  } else {
+    print("Ekin");
+  }
 }
